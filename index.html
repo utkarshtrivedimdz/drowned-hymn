@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Drowned Hymn</title>
+<meta name="description" content="Join the reader list for The Drowned Hymn, the epic fantasy series by Utkarsh Trivedi. Hear first when Book Two, Until the Assembly, is out.">
+<meta property="og:title" content="The Drowned Hymn: reader list">
+<meta property="og:description" content="A kingdom built on a song. A boy who saw what the song hides.">
+<meta property="og:image" content="cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Layout: a moonlit night page in the cover's own colours. Cover and pitch side by side, the reader-list form under the pitch, the map as a lit parchment plate below. */
+:root {
+  --night: #12142a;
+  --night-deep: #0b0c1b;
+  --silver: #d9d6df;
+  --mist: #9c99b2;
+  --moon: #ece7da;
+  --ember: #d98a4a;
+  --parchment: #efe3c6;
+  --ink: #3a2616;
+  --f-display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --f-body: "EB Garamond", Garamond, "Times New Roman", serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse 70% 45% at 50% 0%, #23264a 0%, var(--night) 55%, var(--night-deep) 100%) var(--night-deep);
+  background-attachment: fixed;
+  color: var(--silver);
+  font: 400 1.18rem/1.6 var(--f-body);
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-block: clamp(2rem, 6vw, 4.5rem);
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.series {
+  font: 500 0.82rem/1 var(--f-display);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--mist);
+  margin: 0 0 1.1rem;
+}
+h1, h2 {
+  font-family: var(--f-display);
+  font-weight: 500;
+  color: var(--moon);
+  text-wrap: balance;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+h1 { font-size: clamp(2.1rem, 5.2vw, 3.4rem); line-height: 1.1; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.2; }
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.cover {
+  margin: 0;
+  justify-self: center;
+  width: 100%;
+  max-width: 380px;
+}
+.cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(255,255,255,0.04), 0 30px 60px -20px rgba(0,0,0,0.8), 0 0 80px -10px rgba(140,140,200,0.18);
+}
+.pitch { min-width: 0; }
+.tagline {
+  font-style: italic;
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+  color: var(--moon);
+  margin: 1.2rem 0 1.4rem;
+  max-width: 34ch;
+}
+.pitch p.body { margin: 0 0 1rem; max-width: 60ch; color: var(--silver); }
+.quote {
+  margin: 1.4rem 0 0;
+  padding: 0;
+  font-style: italic;
+  color: var(--moon);
+}
+.quote::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: var(--ember);
+  margin-bottom: 0.9rem;
+}
+
+.signup {
+  margin-top: 2.2rem;
+  padding: 1.6rem 1.6rem 1.4rem;
+  border: 1px solid rgba(217, 214, 223, 0.18);
+  border-radius: 4px;
+  background: rgba(10, 11, 26, 0.55);
+}
+.signup h2 { font-size: 1.15rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.signup p { margin: 0.6rem 0 1.1rem; font-size: 1.08rem; color: var(--silver); }
+.row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+label.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+input[type="email"] {
+  flex: 1 1 15rem;
+  min-width: 0;
+  font: 400 1.08rem var(--f-body);
+  color: var(--moon);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(217, 214, 223, 0.35);
+  border-radius: 3px;
+  padding: 0.75rem 0.9rem;
+}
+input[type="email"]::placeholder { color: var(--mist); }
+input[type="email"]:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; border-color: transparent; }
+button {
+  flex: 0 0 auto;
+  font: 600 0.9rem/1 var(--f-display);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--night-deep);
+  background: var(--moon);
+  border: 0;
+  border-radius: 3px;
+  padding: 0.95rem 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover { background: #fff; }
+button:focus-visible { outline: 2px solid var(--ember); outline-offset: 3px; }
+button[disabled] { opacity: 0.6; cursor: wait; }
+.small { font-size: 0.95rem; color: var(--mist); margin: 0.9rem 0 0; }
+.msg { margin: 0.9rem 0 0; font-size: 1.05rem; min-height: 1.4em; }
+.msg.err { color: #f0a58a; }
+.thanks { text-align: left; }
+.thanks h2 { margin-bottom: 0.4rem; }
+
+.land {
+  margin-top: clamp(3.5rem, 9vw, 6rem);
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+.land .text { min-width: 0; }
+.land p { margin: 1rem 0 0; max-width: 46ch; }
+.plate {
+  margin: 0;
+  padding: 10px;
+  background: var(--parchment);
+  border-radius: 2px;
+  box-shadow: 0 30px 60px -25px rgba(0,0,0,0.85), 0 0 0 1px rgba(58,38,22,0.25);
+}
+.plate a { display: block; }
+.plate img { display: block; width: 100%; height: auto; }
+.plate figcaption {
+  font: italic 400 0.95rem/1.4 var(--f-body);
+  color: var(--ink);
+  padding: 0.6rem 0.3rem 0.1rem;
+  text-align: center;
+}
+
+.people { margin-top: clamp(3.5rem, 9vw, 6rem); }
+.people-head { max-width: 62ch; }
+.people-head p { margin: 1rem 0 0; }
+.people-head .say { font-size: 1rem; color: var(--mist); }
+.houses { margin-top: 2.6rem; display: grid; gap: clamp(2.6rem, 6vw, 4rem); }
+.house-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(217, 214, 223, 0.14); }
+.house-head h3 { margin: 0; font: 500 clamp(1.15rem, 2.4vw, 1.4rem)/1.2 var(--f-display); letter-spacing: 0.1em; text-transform: uppercase; color: var(--moon); }
+.house-head p { margin: 0; font-style: italic; color: var(--mist); font-size: 1.02rem; }
+.house-head { align-items: center !important; gap: 1rem 1.2rem !important; flex-wrap: nowrap !important; }
+.sigil { width: 64px; height: 64px; flex: 0 0 64px; opacity: 0.92; filter: drop-shadow(0 0 12px rgba(236, 231, 218, 0.18)); }
+.house-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 1.2rem; min-width: 0; }
+.house-title .words { flex-basis: 100%; margin: 0.15rem 0 0; font-style: italic; font-size: 1.12rem; color: var(--ember); letter-spacing: 0.01em; }
+.cast { margin-top: 1.4rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.6rem), 1fr)); gap: 1.6rem 1.1rem; }
+.person { margin: 0; min-width: 0; }
+.person img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(217, 214, 223, 0.10), 0 18px 34px -18px rgba(0, 0, 0, 0.9);
+  filter: none;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+}
+.person:hover img { transform: translateY(-3px); filter: saturate(1.05); box-shadow: 0 0 0 1px rgba(217, 138, 74, 0.55), 0 24px 40px -18px rgba(0, 0, 0, 0.95); }
+.person figcaption { padding-top: 0.75rem; }
+.person b { display: block; font: 500 1.22rem/1.2 var(--f-body); letter-spacing: 0.01em; color: var(--moon); }
+.person span { display: block; margin-top: 0.25rem; font-size: 0.94rem; line-height: 1.42; color: var(--silver); }
+@media (prefers-reduced-motion: reduce) { .person img { transition: none; } }
+
+footer {
+  margin-top: clamp(3rem, 8vw, 5rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(217, 214, 223, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.6rem;
+  justify-content: space-between;
+  font-size: 0.98rem;
+  color: var(--mist);
+}
+footer .books { font-family: var(--f-display); font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; }
+footer .books b { color: var(--moon); font-weight: 500; }
+
+@media (max-width: 760px) {
+  .hero, .land { grid-template-columns: minmax(0, 1fr); }
+  .cover { max-width: 300px; }
+  .land .plate { order: -1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cover img { animation: rise 1.2s ease-out both; }
+  @keyframes rise { from { transform: translateY(8px); } to { transform: none; } }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <section class="hero">
+    <figure class="cover">
+      <img src="cover.jpg" width="848" height="1264" alt="Cover of A Man Turned the River: under a half moon, a man with a pick axe cuts the river bank while a boy and a cow watch from the grass, and the water falls toward huts in the valley below.">
+    </figure>
+
+    <div class="pitch">
+      <p class="series">The Drowned Hymn · Book One</p>
+      <h1>A Man Turned the River</h1>
+      <p class="tagline">A kingdom built on a song. A boy who saw what the song hides.</p>
+      <p class="body">In a world where nothing is written, a king is whatever the hymn says he is. Fifty years ago the river broke from its bed in the night and drowned a camp in the valley below. The hymn says the god did it, and on that hymn the king's line has ruled ever since.</p>
+      <p class="body">But a herd-boy lay on the bank that night and saw a man with a pick axe.</p>
+      <p class="quote">The river did not rise. A man turned it.</p>
+
+      <div class="signup" id="signup">
+        <form id="join" novalidate>
+          <h2>Join the reader list</h2>
+          <p>Hear first when Book Two, <i>Until the Assembly</i>, is out, with news of the series along the way.</p>
+          <div class="row">
+            <label class="sr" for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
+            <button id="go" type="submit">Join</button>
+          </div>
+          <p class="msg" id="msg" role="status" aria-live="polite"></p>
+          <p class="small">Only news of the books. Your email is never shared, and you can ask to be taken off at any time.</p>
+        </form>
+        <div class="thanks" id="thanks" hidden>
+          <h2>You are on the list</h2>
+          <p>Thank you. You will hear the moment Book Two is out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="land">
+    <div class="text">
+      <p class="series">The land of the story</p>
+      <h2>Between the hills and the forest</h2>
+      <p>The great river runs down from the mountain of the soma road, past the old clan's grassland on one bank and the meadows of the near hall on the other, and on into the forest.</p>
+      <p>The camp that drowned stood by the river, below the upper meadows.</p>
+    </div>
+    <figure class="plate">
+      <a href="map.jpg"><img src="map.jpg" width="848" height="1264" loading="lazy" alt="Hand-painted map of the land of Book One: snowy mountains and hills at the top, the great river through the middle, grassland and the old clan to the west, the near hall, the barley village and the drowned camp in the meadows to the east, and dense forest along the bottom."></a>
+      <figcaption>The land of Book One. Tap to open it full size.</figcaption>
+    </figure>
+  </section>
+
+  <section class="people" id="people">
+    <div class="people-head">
+      <p class="series">The people of the story</p>
+      <h2>The houses and the hearths</h2>
+      <p>Every house in the land must acclaim the heir. These are the people you meet in Book One, grouped by where they live, with only what the first book tells you.</p>
+      <p class="say">Portraits are imagined from the book; where the text is silent, the painter chose.</p>
+      <p class="say">A line over a vowel makes it long: <i>ā</i> as in <i>father</i>, <i>ī</i> as in <i>see</i>, <i>ū</i> as in <i>moon</i>. <i>Ś</i> and <i>ṣ</i> sound like <i>sh</i>. <i>C</i> is always <i>ch</i>: Cāru is “CHAA-roo”.</p>
+    </div>
+    <div class="houses">
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-king.png" width="192" height="192" alt="Sigil of The king&#x27;s line">
+        <div class="house-title">
+          <h3>The king&#x27;s line</h3>
+        <p>At the near hall</p>
+          <p class="words">“We ride first.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/tigmaratha.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Tigmaratha"><figcaption><b>Tigmaratha</b><span>The old king, now failing. Asks short, exact questions and asks no one&#x27;s leave.</span></figcaption></figure>
+        <figure class="person"><img src="people/kanakaratha.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Kanakaratha"><figcaption><b>Kanakaratha</b><span>His heir, who must be acclaimed by every house. Never raises his voice; laughs where another man would threaten.</span></figcaption></figure>
+        <figure class="person"><img src="people/nilaratha.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Nīlaratha"><figcaption><b>Nīlaratha</b><span>The heir&#x27;s younger brother, lame in the right leg. Careful and gentle; promises only what he holds.</span></figcaption></figure>
+        <figure class="person"><img src="people/grsti.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Gṛṣṭi"><figcaption><b>Gṛṣṭi</b><span>The old king&#x27;s wife. Listens first, then speaks once.</span></figcaption></figure>
+        <figure class="person"><img src="people/urjaratha.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Ūrjaratha"><figcaption><b>Ūrjaratha</b><span>The brothers&#x27; cousin, a fast and showy chariot driver.</span></figcaption></figure>
+        <figure class="person"><img src="people/palita.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Pālita"><figcaption><b>Pālita</b><span>The heir&#x27;s steward, with a piece missing from one ear. Few words, always polite.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-vasu.png" width="192" height="192" alt="Sigil of House Vasuman">
+        <div class="house-title">
+          <h3>House Vasuman</h3>
+        <p>The priests who keep the soma cup</p>
+          <p class="words">“The true rite holds the forest back.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/mahas.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Mahas"><figcaption><b>Mahas</b><span>Priest to the old king. Slow to praise; believes the true rite holds the forest back.</span></figcaption></figure>
+        <figure class="person"><img src="people/ksira.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Kṣīrā"><figcaption><b>Kṣīrā</b><span>His wife.</span></figcaption></figure>
+        <figure class="person"><img src="people/tejas.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Tejas"><figcaption><b>Tejas</b><span>His grandson, who sings the opening of the dawn rite. Asks out loud what others only think.</span></figcaption></figure>
+        <figure class="person"><img src="people/ojas.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Ojas"><figcaption><b>Ojas</b><span>Tejas&#x27;s father, who went up the soma road and never came down.</span></figcaption></figure>
+        <figure class="person"><img src="people/yutha.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Yūthā"><figcaption><b>Yūthā</b><span>Tejas&#x27;s mother.</span></figcaption></figure>
+        <figure class="person"><img src="people/khura.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Khura"><figcaption><b>Khura</b><span>Yūthā&#x27;s father, head of the herders of the given herd.</span></figcaption></figure>
+        <figure class="person"><img src="people/yasas.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Yaśas"><figcaption><b>Yaśas</b><span>Tejas&#x27;s uncle, the best keeper of the house&#x27;s verses.</span></figcaption></figure>
+        <figure class="person"><img src="people/phali.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Phālī"><figcaption><b>Phālī</b><span>Yaśas&#x27;s wife, daughter of Kṣetrin, head of the barley village.</span></figcaption></figure>
+        <figure class="person"><img src="people/bhrajas.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Bhrājas"><figcaption><b>Bhrājas</b><span>Their son, Tejas&#x27;s cousin, who sticks on the first sound of a line.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-sarva.png" width="192" height="192" alt="Sigil of House Sarvamitra">
+        <div class="house-title">
+          <h3>House Sarvamitra</h3>
+        <p>The singers who lead the answer when a king is made</p>
+          <p class="words">“We sit, and askers walk to us.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/didhiti.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Dīdhiti"><figcaption><b>Dīdhiti</b><span>The old head of the house, a widow. Dry and final; she grants or refuses.</span></figcaption></figure>
+        <figure class="person"><img src="people/mukhya.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Mukhya"><figcaption><b>Mukhya</b><span>Her son, who leads the house and its singers.</span></figcaption></figure>
+        <figure class="person"><img src="people/arani.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Araṇī"><figcaption><b>Araṇī</b><span>Mukhya&#x27;s daughter, who hears every word in its place and quotes your own words back to you.</span></figcaption></figure>
+        <figure class="person"><img src="people/caru.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Cāru"><figcaption><b>Cāru</b><span>Mukhya&#x27;s son, the voice meant for the cup.</span></figcaption></figure>
+        <figure class="person"><img src="people/bhasi.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Bhāsī"><figcaption><b>Bhāsī</b><span>Dīdhiti&#x27;s daughter, married to the heir.</span></figcaption></figure>
+        <figure class="person"><img src="people/santva.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Sāntva"><figcaption><b>Sāntva</b><span>The house&#x27;s envoy, who carries its words to the herding home and back.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-dhira.png" width="192" height="192" alt="Sigil of Dhira">
+        <div class="house-title">
+          <h3>Dhira</h3>
+        <p>A teaching house</p>
+          <p class="words">“Again.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/ekadhi.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Ekadhī"><figcaption><b>Ekadhī</b><span>The teacher who keeps the house, old and coughing.</span></figcaption></figure>
+        <figure class="person"><img src="people/sanku.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Śaṅku"><figcaption><b>Śaṅku</b><span>The store-keeper. Counts everything; his correction is &quot;Again.&quot;</span></figcaption></figure>
+        <figure class="person"><img src="people/upala.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Upala"><figcaption><b>Upala</b><span>His son and a student of the house, tall and long-armed. Short with his father, warm with the little learners he teaches.</span></figcaption></figure>
+        <figure class="person"><img src="people/sthali.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Sthālī"><figcaption><b>Sthālī</b><span>Who keeps the kitchen and every jar in it.</span></figcaption></figure>
+        <figure class="person"><img src="people/bija.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Bīja"><figcaption><b>Bīja</b><span>The pledged boy, left with the house for his father&#x27;s debt. Quiet, and notices everything.</span></figcaption></figure>
+        <figure class="person"><img src="people/tusa.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Tuṣa"><figcaption><b>Tuṣa</b><span>Bīja&#x27;s father, a dicer with no house of his own.</span></figcaption></figure>
+        <figure class="person"><img src="people/daru.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Dāru"><figcaption><b>Dāru</b><span>A student sent by the house.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-camp.png" width="192" height="192" alt="Sigil of The drowned camp">
+        <div class="house-title">
+          <h3>The drowned camp</h3>
+        <p>By the river</p>
+          <p class="words">“We keep the mourning.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/kana.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Kaṇa"><figcaption><b>Kaṇa</b><span>A herd-boy with a horn scar through one eyebrow. Quick, bitter and funny.</span></figcaption></figure>
+        <figure class="person"><img src="people/munja.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Muñjā"><figcaption><b>Muñjā</b><span>Kaṇa&#x27;s mother, a widow, who leads the camp&#x27;s work songs.</span></figcaption></figure>
+        <figure class="person"><img src="people/isika.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Iṣīkā"><figcaption><b>Iṣīkā</b><span>Kaṇa&#x27;s sister.</span></figcaption></figure>
+        <figure class="person"><img src="people/stoka.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Stoka"><figcaption><b>Stoka</b><span>The elder who carries the king&#x27;s line&#x27;s word in the camp. Careful with words; once he has decided, he does not change.</span></figcaption></figure>
+        <figure class="person"><img src="people/arbha.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Arbha"><figcaption><b>Arbha</b><span>Stoka&#x27;s son, Kaṇa&#x27;s friend.</span></figcaption></figure>
+        <figure class="person"><img src="people/tila.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Tilā"><figcaption><b>Tilā</b><span>Stoka&#x27;s daughter.</span></figcaption></figure>
+        <figure class="person"><img src="people/vati.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Vātī"><figcaption><b>Vātī</b><span>The oldest woman of the camp.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-hearth.png" width="192" height="192" alt="Sigil of A herding hearth on the pasture">
+        <div class="house-title">
+          <h3>A herding hearth on the pasture</h3>
+        <p>Where the old herdsman lies by the door</p>
+          <p class="words">“Churn before you eat.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/varsa.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Varṣā"><figcaption><b>Varṣā</b><span>Who keeps her grandfather and her cows. Runs her own hearth and has a tongue on her.</span></figcaption></figure>
+        <figure class="person"><img src="people/sisira.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Śiśira"><figcaption><b>Śiśira</b><span>Her grandfather, old enough to remember the river before.</span></figcaption></figure>
+        <figure class="person"><img src="people/ghosa.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Ghoṣā"><figcaption><b>Ghoṣā</b><span>Varṣā&#x27;s grandmother, dead now, still remembered for her tongue.</span></figcaption></figure>
+        <figure class="person"><img src="people/bitten.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Bitten"><figcaption><b>Bitten</b><span>The child from the next hearth, named for a jackal&#x27;s bite.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-clan.png" width="192" height="192" alt="Sigil of The old clan">
+        <div class="house-title">
+          <h3>The old clan</h3>
+        <p>The cattle clan across the river</p>
+          <p class="words">“Say it once.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/bahusena.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Bahusena"><figcaption><b>Bahusena</b><span>The chief, broad and unhurried. Says a thing once.</span></figcaption></figure>
+        <figure class="person"><img src="people/dipta.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Dīpta"><figcaption><b>Dīpta</b><span>His son, who carries his grandfather Aśmasena&#x27;s bow. Bright and quick; wins small things and gives them away grandly.</span></figcaption></figure>
+        <figure class="person"><img src="people/gosena.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Gosena"><figcaption><b>Gosena</b><span>The chief&#x27;s brother.</span></figcaption></figure>
+        <figure class="person"><img src="people/vrkasena.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Vṛkasena"><figcaption><b>Vṛkasena</b><span>Gosena&#x27;s son, Dīpta&#x27;s cousin.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <img class="sigil" src="people/sigil-soma.png" width="192" height="192" alt="Sigil of On the soma road">
+        <div class="house-title">
+          <h3>On the soma road</h3>
+        <p>The guide and those who climb with the priests</p>
+          <p class="words">“Up.”</p>
+        </div>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/rungo.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Ruṅgo"><figcaption><b>Ruṅgo</b><span>The old guide. Says as little as he can, and most of it about the road.</span></figcaption></figure>
+        <figure class="person"><img src="people/luko.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Lūko"><figcaption><b>Lūko</b><span>His sister&#x27;s son.</span></figcaption></figure>
+        <figure class="person"><img src="people/pradhi.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Pradhi"><figcaption><b>Pradhi</b><span>A wright with two fingers gone.</span></figcaption></figure>
+        <figure class="person"><img src="people/niku.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Niku"><figcaption><b>Niku</b><span>Of Pradhi&#x27;s household, a talker.</span></figcaption></figure>
+        <figure class="person"><img src="people/bisa.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Bisā"><figcaption><b>Bisā</b><span>A baker from the near hall.</span></figcaption></figure>
+        <figure class="person"><img src="people/vetra.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Vetra"><figcaption><b>Vetra</b><span>A mat-weaver who wants ground of her own.</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="house">
+      <header class="house-head">
+        <h3>Others</h3>
+        <p>At the king’s fire and in the lower village</p>
+      </header>
+      <div class="cast">
+        <figure class="person"><img src="people/grisma.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Grīṣma"><figcaption><b>Grīṣma</b><span>A witness at the king&#x27;s fire, whose sight has grown dim.</span></figcaption></figure>
+        <figure class="person"><img src="people/vasi.jpg" width="480" height="480" loading="lazy" alt="Painted portrait of Vāśī"><figcaption><b>Vāśī</b><span>Head of the wrights.</span></figcaption></figure>
+      </div>
+    </section>
+    </div>
+  </section>
+
+  <footer>
+    <span>Utkarsh Trivedi</span>
+    <span class="books"><b>A Man Turned the River</b> · Until the Assembly · The Struck Verse</span>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var FORM = "https://docs.google.com/forms/d/e/1FAIpQLSf07pEtXSngVjlqAjPK4BJofomYTrPkUvbu0_q1v15tkYEGMA/formResponse";
+  var FIELD = "entry.1502288771";
+  var form = document.getElementById("join");
+  var email = document.getElementById("email");
+  var go = document.getElementById("go");
+  var msg = document.getElementById("msg");
+  var thanks = document.getElementById("thanks");
+  var ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var v = email.value.trim();
+    msg.className = "msg";
+    if (!ok.test(v)) {
+      msg.className = "msg err";
+      msg.textContent = "Please enter a full email address, like name@example.com.";
+      email.focus();
+      return;
+    }
+    go.disabled = true;
+    msg.textContent = "Adding you to the list…";
+    var body = new URLSearchParams();
+    body.append(FIELD, v);
+    fetch(FORM, { method: "POST", mode: "no-cors", body: body })
+      .then(function () {
+        form.hidden = true;
+        thanks.hidden = false;
+      })
+      .catch(function () {
+        go.disabled = false;
+        msg.className = "msg err";
+        msg.textContent = "That did not go through. Check your connection and press Join again.";
+      });
+  });
+})();
+</script>
+</body>
+</html>
